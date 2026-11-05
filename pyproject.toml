@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wheel-check"
+version = "0.1.0"
+description = "Find what is wrong with a built wheel before you upload it"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [{ name = "Parsa Esmaeili" }]
+keywords = ["wheel", "whl", "packaging", "lint", "RECORD", "pypi"]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/tick-ai/wheel-check"
+
+[project.scripts]
+wheel-check = "wheel_check:main"
+
+[tool.setuptools]
+py-modules = ["wheel_check"]
